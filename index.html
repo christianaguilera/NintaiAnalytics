@@ -7,7 +7,7 @@
   <meta name="description" content="Nintai Analytics – Análisis de datos, automatización, IoT y soluciones tecnológicas para decisiones inteligentes.">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -60,16 +60,28 @@
         radial-gradient(circle at 80% 80%, rgba(0,194,255,0.1), transparent 40%);
     }
 
-    .hero h1 {
-      font-size: clamp(2.5rem, 4vw, 4rem);
-      font-weight: 700;
-      margin-bottom: 24px;
+    .hero-title {
+      font-size: clamp(4rem, 8vw, 6.5rem);
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 16px;
     }
 
-    .hero p {
+    .hero-tagline {
+      font-size: 1.4rem;
+      color: var(--text-muted);
+      max-width: 720px;
+      margin-bottom: 32px;
+    }
+
+    .hero-description {
       font-size: 1.1rem;
       color: var(--text-muted);
-      max-width: 700px;
+      max-width: 760px;
       margin-bottom: 40px;
     }
 
@@ -178,8 +190,9 @@
   <!-- HERO -->
   <section class="hero">
     <div class="container">
-      <h1>El futuro se mide en datos</h1>
-      <p>
+      <h1 class="hero-title">NINTAIANALYTICS</h1>
+      <p class="hero-tagline">El futuro se mide en datos</p>
+      <p class="hero-description">
         En <strong>NINTAI ANALYTICS</strong> desarrollamos soluciones de análisis de datos,
         automatización e integración IoT para entregar parámetros claros que apoyan
         proyectos, operaciones y decisiones estratégicas.
@@ -241,7 +254,7 @@
         </div>
 
         <div>
-          <p style="color: var(--accent); font-weight: 600;">
+          <p style="color: var(--accent); font-weight: 600; font-size:1.2rem;">
             Análisis de datos y parámetros para tus proyectos o decisiones
           </p>
         </div>
@@ -267,3 +280,5 @@
 
 </body>
 </html>
+
+
